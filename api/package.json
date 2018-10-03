@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "REST API serving static JSON file via JSON-Server",
+  "license": "MIT",
+  "author": {
+    "name": "Jesper Lund",
+    "url": "https://github.com/jesperlndk"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "json-server": "^0.14.0"
+  }
+}
