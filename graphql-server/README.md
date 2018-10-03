@@ -1,7 +1,7 @@
 # graphql-server
-*Please see [the repo root folder](https://github.com/jesperlndk/graphql-react-nodejs-demo-app)*.
+*Please see [the repo root folder](https://github.com/jesperlndk/react-graphql-nodejs-api-example-app)*.
 
-**GraphQL Server for "GraphQL + React + Node.js REST API - example app"**  
+**GraphQL Server for "Movie Explorer"**  
 This GraphQL server provides a more efficient, powerful and flexible alternative to the REST API. It allows GraphQL clients to define the structure of the data required, and exactly the same structure of the data is returned from the server, therefore preventing excessively large amounts of data from being returned and [over-fetching](https://stackoverflow.com/questions/44564905/what-is-over-fetching-or-under-fetching).
 
 This project uses open-source [Apollo Server](https://www.apollographql.com/docs/apollo-server/) to serve an API for GraphQL clients.
