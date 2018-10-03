@@ -1,0 +1,79 @@
+type Movie {
+  # Basics
+  title: String!
+  slug: String!
+  id: Int
+  extended_data: Boolean!
+
+  # Details
+  release_year: Int
+  release_date: String
+  original_language: String
+  overview: String
+  fun_facts: String
+  adult: Boolean
+  
+  # Persons
+  actors: [Person]!
+  director: Person!
+  writer: Person!
+
+  # Companies
+  production_company: Company
+  distributor: Company
+
+  # Image paths
+  poster_path: String
+  backdrop_path: String
+
+  # Votes & populartiy
+  vote_count: Int
+  vote_average: Float
+  popularity: Float
+
+  # Genres
+  genres: [Genre]
+  
+  # Locations from Google Maps
+  locations: [Location]
+
+  # Videoes
+  videos: [Video]
+}
+
+enum SortOrder {
+  asc
+  desc
+}
+
+type Query {
+  # Get a single movie
+  movie(
+    # Slug of the movie
+    slug: String!
+  ): Movie
+
+  # Get a list of movies
+  movies(
+    # Page number of the query (defaults to 1)
+    page: Int,
+    # Number/limit of items per page (defaults to 1000)
+    limit: Int,
+    # Number/limit of locations per item
+    locationsLimit: Int,
+    # Bool to denote whether the result list should be shuffled (defaults to false)
+    shuffle: Boolean,
+    # Set the name of a key which the result list should be sorted by
+    sort: String,
+    # Set the order (asc/desc) of the sorting
+    order: SortOrder
+  ): [Movie]
+
+  # Search a list of movies by the movie title
+  search(
+    # Query string to search by
+    query: String!,
+    # Optional limit on number of results
+    limit: Int
+  ): [Movie]
+}

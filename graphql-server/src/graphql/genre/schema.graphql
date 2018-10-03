@@ -1,0 +1,16 @@
+type Genre {
+  name: String
+  id: Int
+  movies: [Movie]
+}
+
+type Query {
+  # Get a single genre
+  genre(
+    # ID of the company
+    id: Int!
+  ): Genre
+
+  # Get a list of all genres available
+  genres: [Genre]
+}

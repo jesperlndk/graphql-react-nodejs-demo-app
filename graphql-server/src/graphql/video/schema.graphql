@@ -1,0 +1,9 @@
+type Video {
+  id: String!
+  key: String!
+  name: String
+  site: String
+  size: Int
+  type: String
+  url: String
+}

@@ -1,0 +1,20 @@
+enum CompanyType {
+  distributor
+  production_company
+}
+
+type Company {
+  name: String!
+  type: CompanyType!
+  movies: [Movie]
+}
+
+type Query {
+  # Get a single company
+  company(
+    # Name of company
+    name: String!,
+    # Type of company
+    type: CompanyType!
+  ): Company
+}

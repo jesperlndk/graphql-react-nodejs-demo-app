@@ -1,0 +1,44 @@
+enum PersonType {
+  actor
+  writer
+  director
+}
+
+type PersonProfile {
+  id: Int
+  name: String
+  profile_path: String
+  birthday: String
+  deathday: String
+  gender: Int
+  biography: String
+  place_of_birth: String
+  adult: Boolean
+  imdb_id: String
+}
+
+type Person {
+  name: String!
+  type: PersonType!
+  movies: [Movie]
+  profile: PersonProfile
+  colleagues: [Person]
+}
+
+type Query {
+  # Get a single person by name and type
+  person(
+    # Name of the person
+    name: String!,
+    # Type of the person
+    type: PersonType!
+  ): Person
+
+  # Get a list of all persons by given type
+  persons(
+    # Type of the persons
+    type: PersonType!,
+    # Optional limit on number of results
+    limit: Int
+  ): [Person]
+}

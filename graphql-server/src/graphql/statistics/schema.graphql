@@ -1,0 +1,19 @@
+enum StatisticsType {
+  totalMoviesByYear
+  totalMoviesByProductionCompany
+  totalMoviesByDistributor
+  totalMoviesByGenres
+}
+
+type StatisticsData {
+  labels: [String]
+  values: [Int]
+}
+
+type Query {
+  # Get statistics data by type
+  statistics(
+    # Type of statistics
+    type: StatisticsType!
+  ): StatisticsData
+}
