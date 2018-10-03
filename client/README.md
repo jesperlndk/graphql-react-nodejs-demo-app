@@ -1,11 +1,15 @@
 # client
-*Please see [the repo root folder](https://github.com/jesperlndk/graphql-react-nodejs-demo-app)*.
+*Please see [the repo root folder](https://github.com/jesperlndk/react-graphql-nodejs-api-example-app)*.
 
-**React web client for "GraphQL + React + Node.js REST API - example app"**  
+**React web client for "Movie Explorer"**  
 The purpose of this application is to enable the user to explore movies of San Francisco in a user-friendly and graphical way.  
 The client queries the GraphQL Server, which fulfills the queries via multiple API endpoints.
 
 This project was bootstrapped with [Create React App](docs/create-react-app.md).
+
+## Demo
+
+Live demo here: [https://client-idrmjxoeap.now.sh](https://client-idrmjxoeap.now.sh/)
 
 ## Installation
 
