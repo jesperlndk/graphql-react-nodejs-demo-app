@@ -1,10 +1,14 @@
 # api
-*Please see [the repo root folder](https://github.com/jesperlndk/graphql-react-nodejs-demo-app)*.
+*Please see [the repo root folder](https://github.com/jesperlndk/react-graphql-nodejs-api-example-app)*.
 
-**API for "GraphQL + React + Node.js REST API - example app"**  
+**API for "Movie Explorer"**  
 Node.js application to serve a REST API enabling you to query the dataset with powerful features like filtering, pagination, sorting and full-text searches.
 
 The REST API is powered by [json-server](https://github.com/typicode/json-server).
+
+## Demo
+
+Live demo here: [https://api-pezcqxyjiw.now.sh](https://api-pezcqxyjiw.now.sh/)
 
 ## Installation
 
