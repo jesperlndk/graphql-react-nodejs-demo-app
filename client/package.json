@@ -21,7 +21,7 @@
     "classnames": "^2.2.6",
     "google-maps-react": "^2.0.2",
     "graphql": "^14.0.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "randomcolor": "^0.5.3",
     "react": "^16.5.2",
     "react-apollo": "^2.2.4",
